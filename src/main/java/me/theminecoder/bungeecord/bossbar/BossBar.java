@@ -139,7 +139,7 @@ public class BossBar {
 
     private net.md_5.bungee.protocol.packet.BossBar getAddPacket() {
         net.md_5.bungee.protocol.packet.BossBar packet = new net.md_5.bungee.protocol.packet.BossBar(uuid, 0);
-        packet.setTitle(this.title);
+        packet.setTitle(this.compiledTitle);
         packet.setColor(this.barColor.ordinal());
         packet.setDivision(this.barStyle.ordinal());
         packet.setHealth(this.progress);
